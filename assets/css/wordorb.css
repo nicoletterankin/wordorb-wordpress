@@ -1,0 +1,610 @@
+/* ==========================================================================
+   WordOrb WordPress Plugin — Styles
+   Version: 1.0.0
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   CSS Custom Properties
+   -------------------------------------------------------------------------- */
+
+:root {
+    --wordorb-primary: #2563eb;
+    --wordorb-primary-hover: #1d4ed8;
+    --wordorb-success: #16a34a;
+    --wordorb-error: #dc2626;
+    --wordorb-bg: #ffffff;
+    --wordorb-bg-muted: #f8fafc;
+    --wordorb-border: #e2e8f0;
+    --wordorb-text: #1e293b;
+    --wordorb-text-muted: #64748b;
+    --wordorb-radius: 8px;
+    --wordorb-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    --wordorb-shadow-lg: 0 4px 6px rgba(0, 0, 0, 0.07), 0 10px 15px rgba(0, 0, 0, 0.1);
+    --wordorb-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* --------------------------------------------------------------------------
+   Word Card
+   -------------------------------------------------------------------------- */
+
+.wordorb-card {
+    font-family: var(--wordorb-font);
+    background: var(--wordorb-bg);
+    border: 1px solid var(--wordorb-border);
+    border-radius: var(--wordorb-radius);
+    box-shadow: var(--wordorb-shadow);
+    overflow: hidden;
+    max-width: 540px;
+    margin: 1.5em 0;
+    color: var(--wordorb-text);
+    line-height: 1.6;
+}
+
+.wordorb-card__image {
+    width: 100%;
+    max-height: 240px;
+    overflow: hidden;
+}
+
+.wordorb-card__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.wordorb-card__body {
+    padding: 1.25rem 1.5rem;
+}
+
+.wordorb-card__header {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.wordorb-card__word {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--wordorb-text);
+}
+
+.wordorb-card__ipa {
+    font-size: 0.95rem;
+    color: var(--wordorb-text-muted);
+    font-style: italic;
+}
+
+.wordorb-card__pos {
+    font-size: 0.8rem;
+    background: var(--wordorb-bg-muted);
+    color: var(--wordorb-primary);
+    padding: 0.15em 0.5em;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: lowercase;
+}
+
+.wordorb-card__def {
+    font-size: 1.05rem;
+    margin: 0 0 0.75rem;
+    color: var(--wordorb-text);
+}
+
+.wordorb-card__etym {
+    font-size: 0.9rem;
+    color: var(--wordorb-text-muted);
+    margin-bottom: 0.75rem;
+    padding: 0.75rem;
+    background: var(--wordorb-bg-muted);
+    border-radius: 6px;
+}
+
+.wordorb-card__langs {
+    margin-top: 0.75rem;
+}
+
+.wordorb-card__langs > strong {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--wordorb-text-muted);
+    margin-bottom: 0.25rem;
+}
+
+.wordorb-card__lang-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.wordorb-card__lang-list li {
+    font-size: 0.85rem;
+    background: var(--wordorb-bg-muted);
+    padding: 0.25em 0.6em;
+    border-radius: 4px;
+}
+
+.wordorb-card__lang-code {
+    font-weight: 700;
+    color: var(--wordorb-primary);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+.wordorb-card__footer,
+.wordorb-quiz__footer,
+.wordorb-lesson__footer {
+    padding: 0.6rem 1.5rem;
+    border-top: 1px solid var(--wordorb-border);
+    text-align: right;
+    font-size: 0.75rem;
+}
+
+.wordorb-card__footer a,
+.wordorb-quiz__footer a,
+.wordorb-lesson__footer a {
+    color: var(--wordorb-text-muted);
+    text-decoration: none;
+}
+
+.wordorb-card__footer a:hover,
+.wordorb-quiz__footer a:hover,
+.wordorb-lesson__footer a:hover {
+    color: var(--wordorb-primary);
+}
+
+/* --------------------------------------------------------------------------
+   Quiz
+   -------------------------------------------------------------------------- */
+
+.wordorb-quiz {
+    font-family: var(--wordorb-font);
+    background: var(--wordorb-bg);
+    border: 1px solid var(--wordorb-border);
+    border-radius: var(--wordorb-radius);
+    box-shadow: var(--wordorb-shadow);
+    max-width: 640px;
+    margin: 1.5em 0;
+    color: var(--wordorb-text);
+    line-height: 1.6;
+    overflow: hidden;
+}
+
+.wordorb-quiz__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--wordorb-border);
+    background: var(--wordorb-bg-muted);
+}
+
+.wordorb-quiz__title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.wordorb-quiz__progress {
+    font-size: 0.9rem;
+    color: var(--wordorb-text-muted);
+    font-weight: 600;
+}
+
+.wordorb-quiz__question {
+    display: none;
+    padding: 1.5rem;
+}
+
+.wordorb-quiz__question--active {
+    display: block;
+}
+
+.wordorb-quiz__prompt {
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin: 0 0 1rem;
+}
+
+.wordorb-quiz__choices {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.wordorb-quiz__choice {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: var(--wordorb-bg);
+    border: 2px solid var(--wordorb-border);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    text-align: left;
+    transition: border-color 0.15s, background 0.15s;
+    font-family: inherit;
+    color: var(--wordorb-text);
+}
+
+.wordorb-quiz__choice:hover {
+    border-color: var(--wordorb-primary);
+    background: #eff6ff;
+}
+
+.wordorb-quiz__choice--selected {
+    border-color: var(--wordorb-primary);
+    background: #eff6ff;
+}
+
+.wordorb-quiz__choice--correct {
+    border-color: var(--wordorb-success);
+    background: #f0fdf4;
+}
+
+.wordorb-quiz__choice--incorrect {
+    border-color: var(--wordorb-error);
+    background: #fef2f2;
+}
+
+.wordorb-quiz__choice--disabled {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.wordorb-quiz__choice-key {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background: var(--wordorb-bg-muted);
+    font-weight: 700;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+}
+
+.wordorb-quiz__open {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--wordorb-border);
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.wordorb-quiz__open:focus {
+    outline: none;
+    border-color: var(--wordorb-primary);
+}
+
+.wordorb-quiz__submit-open {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1.25rem;
+    background: var(--wordorb-primary);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.wordorb-quiz__submit-open:hover {
+    background: var(--wordorb-primary-hover);
+}
+
+.wordorb-quiz__explanation {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    background: #fffbeb;
+    border-left: 4px solid #f59e0b;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.9rem;
+    color: #92400e;
+}
+
+.wordorb-quiz__explanation p {
+    margin: 0;
+}
+
+.wordorb-quiz__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 1.5rem;
+    border-top: 1px solid var(--wordorb-border);
+}
+
+.wordorb-quiz__prev,
+.wordorb-quiz__next,
+.wordorb-quiz__retry {
+    padding: 0.5rem 1.25rem;
+    border: 2px solid var(--wordorb-border);
+    background: var(--wordorb-bg);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    color: var(--wordorb-text);
+    transition: border-color 0.15s, background 0.15s;
+}
+
+.wordorb-quiz__prev:hover,
+.wordorb-quiz__next:hover,
+.wordorb-quiz__retry:hover {
+    border-color: var(--wordorb-primary);
+    background: #eff6ff;
+}
+
+.wordorb-quiz__prev:disabled,
+.wordorb-quiz__next:disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+
+.wordorb-quiz__results {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.wordorb-quiz__results h4 {
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem;
+}
+
+.wordorb-quiz__score {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--wordorb-primary);
+    margin: 0.5rem 0 1rem;
+}
+
+.wordorb-quiz__retry {
+    margin-top: 0.5rem;
+}
+
+/* --------------------------------------------------------------------------
+   Lesson
+   -------------------------------------------------------------------------- */
+
+.wordorb-lesson {
+    font-family: var(--wordorb-font);
+    background: var(--wordorb-bg);
+    border: 1px solid var(--wordorb-border);
+    border-radius: var(--wordorb-radius);
+    box-shadow: var(--wordorb-shadow);
+    max-width: 720px;
+    margin: 1.5em 0;
+    color: var(--wordorb-text);
+    line-height: 1.7;
+    overflow: hidden;
+}
+
+.wordorb-lesson__header {
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--wordorb-border);
+    background: var(--wordorb-bg-muted);
+}
+
+.wordorb-lesson__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 0.25rem;
+}
+
+.wordorb-lesson__meta {
+    display: flex;
+    gap: 0.75rem;
+    font-size: 0.85rem;
+    color: var(--wordorb-text-muted);
+}
+
+.wordorb-lesson__meta span {
+    background: var(--wordorb-bg);
+    padding: 0.15em 0.5em;
+    border-radius: 4px;
+    border: 1px solid var(--wordorb-border);
+}
+
+.wordorb-lesson__tabs {
+    display: flex;
+    overflow-x: auto;
+    border-bottom: 2px solid var(--wordorb-border);
+    padding: 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+.wordorb-lesson__tab {
+    flex: 1;
+    padding: 0.75rem 0.5rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--wordorb-text-muted);
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    white-space: nowrap;
+    transition: color 0.15s, border-color 0.15s;
+    font-family: inherit;
+    text-align: center;
+}
+
+.wordorb-lesson__tab:hover {
+    color: var(--wordorb-primary);
+}
+
+.wordorb-lesson__tab--active {
+    color: var(--wordorb-primary);
+    border-bottom-color: var(--wordorb-primary);
+}
+
+.wordorb-lesson__tab-icon {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.15rem;
+}
+
+.wordorb-lesson__phase {
+    display: none;
+    padding: 1.5rem;
+}
+
+.wordorb-lesson__phase--active {
+    display: block;
+}
+
+.wordorb-lesson__phase p {
+    margin: 0 0 0.75rem;
+}
+
+.wordorb-lesson__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 1.5rem;
+    border-top: 1px solid var(--wordorb-border);
+}
+
+.wordorb-lesson__prev,
+.wordorb-lesson__next {
+    padding: 0.5rem 1.25rem;
+    border: 2px solid var(--wordorb-border);
+    background: var(--wordorb-bg);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    color: var(--wordorb-text);
+    transition: border-color 0.15s, background 0.15s;
+}
+
+.wordorb-lesson__prev:hover,
+.wordorb-lesson__next:hover {
+    border-color: var(--wordorb-primary);
+    background: #eff6ff;
+}
+
+.wordorb-lesson__prev:disabled,
+.wordorb-lesson__next:disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+
+/* --------------------------------------------------------------------------
+   Word of the Day Widget
+   -------------------------------------------------------------------------- */
+
+.wordorb-wotd {
+    font-family: var(--wordorb-font);
+    line-height: 1.6;
+}
+
+.wordorb-wotd__title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0 0 0.25rem;
+    color: var(--wordorb-text);
+}
+
+.wordorb-wotd__theme {
+    font-size: 0.85rem;
+    color: var(--wordorb-primary);
+    margin: 0 0 0.5rem;
+    font-weight: 600;
+}
+
+.wordorb-wotd__hook {
+    font-size: 0.9rem;
+    color: var(--wordorb-text-muted);
+    margin: 0 0 0.75rem;
+}
+
+.wordorb-wotd__quiz {
+    font-size: 0.85rem;
+    color: var(--wordorb-text);
+    margin: 0 0 0.75rem;
+    padding: 0.5rem;
+    background: var(--wordorb-bg-muted);
+    border-radius: 6px;
+}
+
+.wordorb-wotd__link {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: var(--wordorb-primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.wordorb-wotd__link:hover {
+    text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
+   Error State
+   -------------------------------------------------------------------------- */
+
+.wordorb-error {
+    font-family: var(--wordorb-font);
+    color: var(--wordorb-error);
+    background: #fef2f2;
+    padding: 0.75rem 1rem;
+    border-radius: var(--wordorb-radius);
+    border: 1px solid #fecaca;
+    font-size: 0.9rem;
+    margin: 1em 0;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 600px) {
+    .wordorb-card,
+    .wordorb-quiz,
+    .wordorb-lesson {
+        max-width: 100%;
+        border-radius: 0;
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+
+    .wordorb-card__body,
+    .wordorb-quiz__question,
+    .wordorb-lesson__phase {
+        padding: 1rem;
+    }
+
+    .wordorb-card__word {
+        font-size: 1.25rem;
+    }
+
+    .wordorb-lesson__tab {
+        font-size: 0.75rem;
+        padding: 0.5rem 0.25rem;
+    }
+
+    .wordorb-lesson__tab-icon {
+        font-size: 1rem;
+    }
+
+    .wordorb-quiz__nav,
+    .wordorb-lesson__nav {
+        padding: 0.5rem 1rem;
+    }
+}
