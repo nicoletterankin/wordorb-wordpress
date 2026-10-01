@@ -47,15 +47,15 @@ Embed rich vocabulary cards, interactive quizzes, and structured 5-phase lessons
 = Getting an API Key =
 
 1. Visit [wordorb.ai](https://wordorb.ai) and sign up.
-2. The free tier includes 50 API calls per day.
-3. Paid plans start at $49/month for 5,000 daily calls.
+2. A key with no paid plan includes 10,000 API calls per day.
+3. See https://wordorb.ai/pricing for paid plans.
 4. Copy your API key (starts with `wo_`) into the plugin settings.
 
 == Frequently Asked Questions ==
 
 = Where do I get an API key? =
 
-Sign up at [wordorb.ai](https://wordorb.ai). The free tier provides 50 daily API calls, enough for most personal blogs.
+Sign up at [wordorb.ai](https://wordorb.ai). A key with no paid plan includes 10,000 API calls per day, enough for most personal blogs.
 
 = Is the API key exposed to visitors? =
 
