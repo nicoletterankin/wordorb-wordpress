@@ -1,4 +1,4 @@
-=== WordOrb Vocabulary ===
+=== Word Orb Vocabulary ===
 Contributors: lessonoftheday
 Tags: vocabulary, dictionary, education, quiz, language-learning
 Requires at least: 5.8
@@ -8,11 +8,11 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Embed rich vocabulary cards, interactive quizzes, and structured 5-phase lessons from the WordOrb API. 162K words, 47 languages, 226K lessons.
+Embed rich vocabulary cards, interactive quizzes, and structured 5-phase lessons from the Word Orb API. 162K words, 47 languages, 226K lessons.
 
 == Description ==
 
-**WordOrb Vocabulary** connects your WordPress site to the [WordOrb API](https://wordorb.ai) -- dictionary infrastructure for 162,000 English words with definitions, IPA pronunciation, etymology, and translations in 47 languages.
+**Word Orb Vocabulary** connects your WordPress site to the [Word Orb API](https://wordorb.ai) -- dictionary infrastructure for 162,000 English words with definitions, IPA pronunciation, etymology, and translations in 47 languages.
 
 = Features =
 
@@ -20,7 +20,7 @@ Embed rich vocabulary cards, interactive quizzes, and structured 5-phase lessons
 * **Quiz Shortcode** -- `[wordorb_quiz day="42" track="learn" count="5"]` renders an interactive multiple-choice and open-ended quiz.
 * **Lesson Shortcode** -- `[wordorb_lesson day="1" track="learn" age="adult"]` renders a 5-phase lesson (hook, story, wonder, action, wisdom) with tabbed navigation.
 * **Word of the Day Widget** -- Sidebar widget that displays the daily vocabulary lesson summary.
-* **Gutenberg Block** -- Drag-and-drop WordOrb Word Card block for the block editor.
+* **Gutenberg Block** -- Drag-and-drop Word Orb Word Card block for the block editor.
 * **REST API Proxy** -- Server-side proxy at `/wp-json/wordorb/v1/` keeps your API key safe.
 * **Transient Caching** -- API responses are cached for 1 hour (configurable) to reduce API calls.
 
@@ -41,13 +41,13 @@ Embed rich vocabulary cards, interactive quizzes, and structured 5-phase lessons
 
 1. Upload the `wordorb` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. Go to **Settings > WordOrb** and enter your API key.
+3. Go to **Settings > Word Orb** and enter your API key.
 4. Use shortcodes, the widget, or the Gutenberg block in your content.
 
 = Getting an API Key =
 
 1. Visit [wordorb.ai](https://wordorb.ai) and sign up.
-2. The free tier includes 50 API calls per day.
+2. The $0 tier includes 50 API calls per day.
 3. Paid plans start at $49/month for 5,000 daily calls.
 4. Copy your API key (starts with `wo_`) into the plugin settings.
 
@@ -55,7 +55,7 @@ Embed rich vocabulary cards, interactive quizzes, and structured 5-phase lessons
 
 = Where do I get an API key? =
 
-Sign up at [wordorb.ai](https://wordorb.ai). The free tier provides 50 daily API calls, enough for most personal blogs.
+Sign up at [wordorb.ai](https://wordorb.ai). The $0 tier provides 50 daily API calls, enough for most personal blogs.
 
 = Is the API key exposed to visitors? =
 
@@ -63,7 +63,7 @@ No. The plugin proxies all API calls through your WordPress server via the REST 
 
 = How does caching work? =
 
-API responses are stored as WordPress transients. The default TTL is 1 hour, configurable in Settings > WordOrb. This means each unique word lookup only calls the API once per hour.
+API responses are stored as WordPress transients. The default TTL is 1 hour, configurable in Settings > Word Orb. This means each unique word lookup only calls the API once per hour.
 
 = Can I customize the appearance? =
 
@@ -106,4 +106,4 @@ Yes. Use the `type` attribute: `[wordorb_quiz day="1" track="learn" type="mc"]`.
 == Upgrade Notice ==
 
 = 1.0.0 =
-Initial release of WordOrb Vocabulary for WordPress.
+Initial release of Word Orb Vocabulary for WordPress.
