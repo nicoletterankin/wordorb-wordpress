@@ -1,6 +1,6 @@
-# WordOrb Vocabulary -- WordPress Plugin
+# Word Orb Vocabulary -- WordPress Plugin
 
-Embed vocabulary cards, interactive quizzes, and structured lessons from the WordOrb API into any WordPress site.
+Embed vocabulary cards, interactive quizzes, and structured lessons from the Word Orb API into any WordPress site.
 
 ## Submission Guide for WordPress.org Plugin Directory
 
@@ -15,7 +15,7 @@ Embed vocabulary cards, interactive quizzes, and structured lessons from the Wor
 
 - [ ] Plugin header in `wordorb.php` includes all required fields (Name, Description, Version, Author, License).
 - [ ] `readme.txt` follows [WordPress.org readme standard](https://developer.wordpress.org/plugins/wordpress-org/how-your-readme-txt-works/).
-- [ ] No references to "premium" or "pro" versions in the free plugin.
+- [ ] No references to "premium" or "pro" versions in the plugin.
 - [ ] All strings are translatable via `__()` and `esc_html__()`.
 - [ ] Text domain matches the plugin slug (`wordorb`).
 - [ ] No external CDN calls -- all assets are local.
